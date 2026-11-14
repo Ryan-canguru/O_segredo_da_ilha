@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://78iepn0y5g1n"
+
+[deps]
+
+files=["res://Rosa_Negra/indice.x.translation", "res://Rosa_Negra/indice.y.translation", "res://Rosa_Negra/indice.largura.translation", "res://Rosa_Negra/indice.altura.translation", "res://Rosa_Negra/indice.x.translation", "res://Rosa_Negra/indice.y.translation"]
+
+source_file="res://Rosa_Negra/indice.csv"
+dest_files=["res://Rosa_Negra/indice.x.translation", "res://Rosa_Negra/indice.y.translation", "res://Rosa_Negra/indice.largura.translation", "res://Rosa_Negra/indice.altura.translation", "res://Rosa_Negra/indice.x.translation", "res://Rosa_Negra/indice.y.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
