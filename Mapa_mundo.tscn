@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://bm33lskxxpfst"]
-
-[ext_resource type="PackedScene" uid="uid://bcoa6jv7ol2yr" path="res://anne.tscn" id="1_6d4ed"]
-
-[node name="Mapa_mundo" type="Node2D" unique_id=1904817757]
-
-[node name="anne" parent="." unique_id=558471284 instance=ExtResource("1_6d4ed")]
-position = Vector2(353, 204)

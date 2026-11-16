@@ -1,0 +1,877 @@
+{
+ "cell": 32,
+ "margin": 0,
+ "spacing": 0,
+ "scales": {
+  "32px": 1,
+  "64px": 2,
+  "96px": 3
+ },
+ "note": "x, y, w, h are for the 32-px sheets; multiply by 2 or 3 for sheets/64px and sheets/96px",
+ "sheets": {
+  "sheets/ground.png": {
+   "w": 512,
+   "h": 96,
+   "cell_w": 32,
+   "cell_h": 32
+  },
+  "sheets/props-64x64.png": {
+   "w": 512,
+   "h": 384,
+   "cell_w": 64,
+   "cell_h": 64
+  },
+  "sheets/props-32x64.png": {
+   "w": 512,
+   "h": 192,
+   "cell_w": 32,
+   "cell_h": 64
+  },
+  "sheets/props-32x32.png": {
+   "w": 512,
+   "h": 512,
+   "cell_w": 32,
+   "cell_h": 32
+  },
+  "sheets/props-64x32.png": {
+   "w": 512,
+   "h": 32,
+   "cell_w": 64,
+   "cell_h": 32
+  },
+  "sheets/props-96x96.png": {
+   "w": 768,
+   "h": 96,
+   "cell_w": 96,
+   "cell_h": 96
+  },
+  "sheets/props-64x96.png": {
+   "w": 512,
+   "h": 192,
+   "cell_w": 64,
+   "cell_h": 96
+  },
+  "sheets/props-32x96.png": {
+   "w": 512,
+   "h": 96,
+   "cell_w": 32,
+   "cell_h": 96
+  }
+ },
+ "terrains": [
+  "Beach sand",
+  "Tropical grass"
+ ],
+ "assets": {
+  "ground/deck-planks/dock-plank-h-01": {
+   "sheet": "sheets/ground.png",
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/deck-planks/dock-plank-h-01.png",
+   "category": "ground/deck-planks"
+  },
+  "ground/deck-planks/dock-plank-h-02": {
+   "sheet": "sheets/ground.png",
+   "x": 32,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/deck-planks/dock-plank-h-02.png",
+   "category": "ground/deck-planks"
+  },
+  "ground/deck-planks/dock-plank-v-01": {
+   "sheet": "sheets/ground.png",
+   "x": 64,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/deck-planks/dock-plank-v-01.png",
+   "category": "ground/deck-planks"
+  },
+  "ground/sand-grass/00_gggg": {
+   "sheet": "sheets/ground.png",
+   "x": 0,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/00_gggg.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Tropical grass",
+    "Tropical grass",
+    "Tropical grass",
+    "Tropical grass"
+   ]
+  },
+  "ground/sand-grass/01_gggs": {
+   "sheet": "sheets/ground.png",
+   "x": 32,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/01_gggs.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Tropical grass",
+    "Tropical grass",
+    "Tropical grass",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/02_ggsg": {
+   "sheet": "sheets/ground.png",
+   "x": 64,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/02_ggsg.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Tropical grass",
+    "Tropical grass",
+    "Beach sand",
+    "Tropical grass"
+   ]
+  },
+  "ground/sand-grass/03_ggss": {
+   "sheet": "sheets/ground.png",
+   "x": 96,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/03_ggss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Tropical grass",
+    "Tropical grass",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/04_gsgg": {
+   "sheet": "sheets/ground.png",
+   "x": 128,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/04_gsgg.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Tropical grass",
+    "Beach sand",
+    "Tropical grass",
+    "Tropical grass"
+   ]
+  },
+  "ground/sand-grass/05_gsgs": {
+   "sheet": "sheets/ground.png",
+   "x": 160,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/05_gsgs.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Tropical grass",
+    "Beach sand",
+    "Tropical grass",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/06_gssg": {
+   "sheet": "sheets/ground.png",
+   "x": 192,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/06_gssg.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Tropical grass",
+    "Beach sand",
+    "Beach sand",
+    "Tropical grass"
+   ]
+  },
+  "ground/sand-grass/07_gsss": {
+   "sheet": "sheets/ground.png",
+   "x": 224,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/07_gsss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Tropical grass",
+    "Beach sand",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/08_sggg": {
+   "sheet": "sheets/ground.png",
+   "x": 256,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/08_sggg.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Tropical grass",
+    "Tropical grass",
+    "Tropical grass"
+   ]
+  },
+  "ground/sand-grass/09_sggs": {
+   "sheet": "sheets/ground.png",
+   "x": 288,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/09_sggs.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Tropical grass",
+    "Tropical grass",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/10_sgsg": {
+   "sheet": "sheets/ground.png",
+   "x": 320,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/10_sgsg.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Tropical grass",
+    "Beach sand",
+    "Tropical grass"
+   ]
+  },
+  "ground/sand-grass/11_sgss": {
+   "sheet": "sheets/ground.png",
+   "x": 352,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/11_sgss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Tropical grass",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/12_ssgg": {
+   "sheet": "sheets/ground.png",
+   "x": 384,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/12_ssgg.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Tropical grass",
+    "Tropical grass"
+   ]
+  },
+  "ground/sand-grass/13_ssgs": {
+   "sheet": "sheets/ground.png",
+   "x": 416,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/13_ssgs.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Tropical grass",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/14_sssg": {
+   "sheet": "sheets/ground.png",
+   "x": 448,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/14_sssg.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Beach sand",
+    "Tropical grass"
+   ]
+  },
+  "ground/sand-grass/15_ssss": {
+   "sheet": "sheets/ground.png",
+   "x": 480,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/15_ssss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/17_ssss": {
+   "sheet": "sheets/ground.png",
+   "x": 0,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/17_ssss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/18_ssss": {
+   "sheet": "sheets/ground.png",
+   "x": 32,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/18_ssss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/19_ssss": {
+   "sheet": "sheets/ground.png",
+   "x": 64,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/19_ssss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/20_ssss": {
+   "sheet": "sheets/ground.png",
+   "x": 96,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/20_ssss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "ground/sand-grass/21_ssss": {
+   "sheet": "sheets/ground.png",
+   "x": 128,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/ground/sand-grass/21_ssss.png",
+   "category": "ground/sand-grass",
+   "corners_nw_ne_sw_se": [
+    "Beach sand",
+    "Beach sand",
+    "Beach sand",
+    "Beach sand"
+   ]
+  },
+  "walls/stake-fence/gate/gate-rope-arch-2x1": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 0,
+   "y": 0,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/walls/stake-fence/gate/gate-rope-arch-2x1.png",
+   "category": "walls/stake-fence/gate"
+  },
+  "walls/stake-fence/posts/corner-tall-left": {
+   "sheet": "sheets/props-32x64.png",
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 64,
+   "file": "png/32px/walls/stake-fence/posts/corner-tall-left.png",
+   "category": "walls/stake-fence/posts"
+  },
+  "walls/stake-fence/posts/corner-tall-right": {
+   "sheet": "sheets/props-32x64.png",
+   "x": 32,
+   "y": 0,
+   "w": 32,
+   "h": 64,
+   "file": "png/32px/walls/stake-fence/posts/corner-tall-right.png",
+   "category": "walls/stake-fence/posts"
+  },
+  "walls/stake-fence/runs/fence-net": {
+   "sheet": "sheets/props-32x64.png",
+   "x": 0,
+   "y": 64,
+   "w": 32,
+   "h": 64,
+   "file": "png/32px/walls/stake-fence/runs/fence-net.png",
+   "category": "walls/stake-fence/runs"
+  },
+  "walls/stake-fence/runs/fence-plain": {
+   "sheet": "sheets/props-32x64.png",
+   "x": 32,
+   "y": 64,
+   "w": 32,
+   "h": 64,
+   "file": "png/32px/walls/stake-fence/runs/fence-plain.png",
+   "category": "walls/stake-fence/runs"
+  },
+  "walls/stake-fence/runs/fence-two-ropes": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/walls/stake-fence/runs/fence-two-ropes.png",
+   "category": "walls/stake-fence/runs"
+  },
+  "walls/stake-fence/side/side-left": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/walls/stake-fence/side/side-left.png",
+   "category": "walls/stake-fence/side"
+  },
+  "walls/stake-fence/side/side-right": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/walls/stake-fence/side/side-right.png",
+   "category": "walls/stake-fence/side"
+  },
+  "props/barrels-crates/barrels-crates-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/barrels-crates/barrels-crates-02.png",
+   "category": "props/barrels-crates"
+  },
+  "props/barrels-crates/barrels-crates-17": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/barrels-crates/barrels-crates-17.png",
+   "category": "props/barrels-crates"
+  },
+  "props/beach-junk-animals/beach-junk-animals-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/beach-junk-animals/beach-junk-animals-02.png",
+   "category": "props/beach-junk-animals"
+  },
+  "props/beach-junk-animals/beach-junk-animals-17": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/beach-junk-animals/beach-junk-animals-17.png",
+   "category": "props/beach-junk-animals"
+  },
+  "props/buildings/buildings-02": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 0,
+   "y": 64,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/buildings/buildings-02.png",
+   "category": "props/buildings"
+  },
+  "props/buildings/buildings-09": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 64,
+   "y": 64,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/buildings/buildings-09.png",
+   "category": "props/buildings"
+  },
+  "props/cannons-anchors-lanterns/cannons-anchors-lanterns-02": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 0,
+   "y": 128,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/cannons-anchors-lanterns/cannons-anchors-lanterns-02.png",
+   "category": "props/cannons-anchors-lanterns"
+  },
+  "props/cannons-anchors-lanterns/cannons-anchors-lanterns-17": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 64,
+   "y": 128,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/cannons-anchors-lanterns/cannons-anchors-lanterns-17.png",
+   "category": "props/cannons-anchors-lanterns"
+  },
+  "props/dock-gear/dock-gear-02": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 0,
+   "y": 192,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/dock-gear/dock-gear-02.png",
+   "category": "props/dock-gear"
+  },
+  "props/dock-gear/dock-gear-17": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 64,
+   "y": 192,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/dock-gear/dock-gear-17.png",
+   "category": "props/dock-gear"
+  },
+  "props/ferns-trees/ferns-trees-02": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 0,
+   "y": 256,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/ferns-trees/ferns-trees-02.png",
+   "category": "props/ferns-trees"
+  },
+  "props/ferns-trees/ferns-trees-16": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 64,
+   "y": 256,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/ferns-trees/ferns-trees-16.png",
+   "category": "props/ferns-trees"
+  },
+  "props/ground-decals/ground-decals-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/ground-decals/ground-decals-02.png",
+   "category": "props/ground-decals"
+  },
+  "props/ground-decals/ground-decals-15": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/ground-decals/ground-decals-15.png",
+   "category": "props/ground-decals"
+  },
+  "props/palms-bushes/palms-bushes-02": {
+   "sheet": "sheets/props-64x32.png",
+   "x": 0,
+   "y": 0,
+   "w": 64,
+   "h": 32,
+   "file": "png/32px/props/palms-bushes/palms-bushes-02.png",
+   "category": "props/palms-bushes"
+  },
+  "props/palms-bushes/palms-bushes-17": {
+   "sheet": "sheets/props-64x64.png",
+   "x": 0,
+   "y": 320,
+   "w": 64,
+   "h": 64,
+   "file": "png/32px/props/palms-bushes/palms-bushes-17.png",
+   "category": "props/palms-bushes"
+  },
+  "props/rocks-coral/rocks-coral-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/rocks-coral/rocks-coral-02.png",
+   "category": "props/rocks-coral"
+  },
+  "props/rocks-coral/rocks-coral-17": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/rocks-coral/rocks-coral-17.png",
+   "category": "props/rocks-coral"
+  },
+  "props/sacks-rope-cannonballs/sacks-rope-cannonballs-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/sacks-rope-cannonballs/sacks-rope-cannonballs-02.png",
+   "category": "props/sacks-rope-cannonballs"
+  },
+  "props/sacks-rope-cannonballs/sacks-rope-cannonballs-17": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/sacks-rope-cannonballs/sacks-rope-cannonballs-17.png",
+   "category": "props/sacks-rope-cannonballs"
+  },
+  "props/sand-decals/sand-decals-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 224,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/sand-decals/sand-decals-02.png",
+   "category": "props/sand-decals"
+  },
+  "props/sand-decals/sand-decals-13": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 224,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/sand-decals/sand-decals-13.png",
+   "category": "props/sand-decals"
+  },
+  "props/scatter-bits/scatter-bits-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 256,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/scatter-bits/scatter-bits-02.png",
+   "category": "props/scatter-bits"
+  },
+  "props/scatter-bits/scatter-bits-17": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 256,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/scatter-bits/scatter-bits-17.png",
+   "category": "props/scatter-bits"
+  },
+  "props/scatter-shells-coins/scatter-shells-coins-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 288,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/scatter-shells-coins/scatter-shells-coins-02.png",
+   "category": "props/scatter-shells-coins"
+  },
+  "props/scatter-shells-coins/scatter-shells-coins-17": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 288,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/scatter-shells-coins/scatter-shells-coins-17.png",
+   "category": "props/scatter-shells-coins"
+  },
+  "props/set-pieces/set-pieces-02": {
+   "sheet": "sheets/props-96x96.png",
+   "x": 0,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "file": "png/32px/props/set-pieces/set-pieces-02.png",
+   "category": "props/set-pieces"
+  },
+  "props/set-pieces/set-pieces-07": {
+   "sheet": "sheets/props-64x96.png",
+   "x": 0,
+   "y": 0,
+   "w": 64,
+   "h": 96,
+   "file": "png/32px/props/set-pieces/set-pieces-07.png",
+   "category": "props/set-pieces"
+  },
+  "props/shells-driftwood/shells-driftwood-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 320,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/shells-driftwood/shells-driftwood-02.png",
+   "category": "props/shells-driftwood"
+  },
+  "props/shells-driftwood/shells-driftwood-16": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 320,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/shells-driftwood/shells-driftwood-16.png",
+   "category": "props/shells-driftwood"
+  },
+  "props/small-boats/small-boats-02": {
+   "sheet": "sheets/props-32x64.png",
+   "x": 0,
+   "y": 128,
+   "w": 32,
+   "h": 64,
+   "file": "png/32px/props/small-boats/small-boats-02.png",
+   "category": "props/small-boats"
+  },
+  "props/small-boats/small-boats-08": {
+   "sheet": "sheets/props-32x64.png",
+   "x": 32,
+   "y": 128,
+   "w": 32,
+   "h": 64,
+   "file": "png/32px/props/small-boats/small-boats-08.png",
+   "category": "props/small-boats"
+  },
+  "props/tavern-furniture/tavern-furniture-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 352,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/tavern-furniture/tavern-furniture-02.png",
+   "category": "props/tavern-furniture"
+  },
+  "props/tavern-furniture/tavern-furniture-18": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 352,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/tavern-furniture/tavern-furniture-18.png",
+   "category": "props/tavern-furniture"
+  },
+  "props/tavern-items/tavern-items-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 384,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/tavern-items/tavern-items-02.png",
+   "category": "props/tavern-items"
+  },
+  "props/tavern-items/tavern-items-18": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 384,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/tavern-items/tavern-items-18.png",
+   "category": "props/tavern-items"
+  },
+  "props/towers/towers-02": {
+   "sheet": "sheets/props-32x96.png",
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 96,
+   "file": "png/32px/props/towers/towers-02.png",
+   "category": "props/towers"
+  },
+  "props/towers/towers-09": {
+   "sheet": "sheets/props-64x96.png",
+   "x": 0,
+   "y": 96,
+   "w": 64,
+   "h": 96,
+   "file": "png/32px/props/towers/towers-09.png",
+   "category": "props/towers"
+  },
+  "props/treasure-chests/treasure-chests-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 416,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/treasure-chests/treasure-chests-02.png",
+   "category": "props/treasure-chests"
+  },
+  "props/treasure-chests/treasure-chests-17": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 416,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/treasure-chests/treasure-chests-17.png",
+   "category": "props/treasure-chests"
+  },
+  "props/treasure-loot/treasure-loot-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 448,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/treasure-loot/treasure-loot-02.png",
+   "category": "props/treasure-loot"
+  },
+  "props/treasure-loot/treasure-loot-16": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 448,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/treasure-loot/treasure-loot-16.png",
+   "category": "props/treasure-loot"
+  },
+  "props/wreckage-bones/wreckage-bones-02": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 0,
+   "y": 480,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/wreckage-bones/wreckage-bones-02.png",
+   "category": "props/wreckage-bones"
+  },
+  "props/wreckage-bones/wreckage-bones-17": {
+   "sheet": "sheets/props-32x32.png",
+   "x": 32,
+   "y": 480,
+   "w": 32,
+   "h": 32,
+   "file": "png/32px/props/wreckage-bones/wreckage-bones-17.png",
+   "category": "props/wreckage-bones"
+  }
+ }
+}

@@ -1,0 +1,18 @@
+ILHA PIRATA - ASSETS PARA GODOT
+
+Pastas:
+- Terrenos: tiles de grama, areia, água, caminhos e bordas.
+- Vegetacao: palmeiras, arbustos, flores e pedras.
+- Construcoes: casas, mercado, torre e poço.
+- Objetos: barris, caixas, cercas, fogueira, canhão e decoração.
+- Navios: navio pirata e bote.
+
+IMPORTANTE:
+Os PNGs são recortes individuais da folha de sprites gerada. Como a arte original não foi desenhada numa grade perfeitamente uniforme, alguns recortes podem precisar de pequenos ajustes.
+
+Na Godot:
+1. Extraia esta pasta.
+2. Copie as pastas para res://Assets/ ou arraste-as para o FileSystem.
+3. Para os tiles de terreno, crie um TileSet e adicione as texturas em TileSet Atlas Source.
+4. Para objetos grandes (casas, navios, árvores), use Sprite2D ou crie cenas com Area2D/StaticBody2D e CollisionShape2D conforme necessário.
+5. Ajuste colisões e regiões de tile manualmente; os PNGs não incluem colisões pré-configuradas.
