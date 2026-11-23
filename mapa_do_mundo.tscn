@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://jse6c8s3ypg8" path="res://ilhasdasfase/ilha_3_floresta_ruinas.png" id="6_rvje3"]
 [ext_resource type="Texture2D" uid="uid://c5x5rvedop2un" path="res://ilhasdasfase/ilha_2_ruinas.png" id="8_xqfhs"]
 [ext_resource type="Script" uid="uid://clrmabygs4nx5" path="res://mapa_do_mundo.gd" id="9_retorno"]
+[ext_resource type="Script" uid="uid://ckgplkg0is1ko" path="res://bussola.gd" id="hud_bussola"]
 [ext_resource type="Script" uid="uid://d4nomxm36y0x" path="res://ilha_inicial.gd" id="portal_fase_2"]
 [ext_resource type="Script" uid="uid://dt7wnwy2ady1u" path="res://ilha_3.gd" id="portal_fase_3"]
 [ext_resource type="Script" uid="uid://yv823ruq0t1o" path="res://ilha_4.gd" id="portal_fase_4"]
@@ -201,6 +202,41 @@ metadata/_edit_group_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" unique_id=701506743]
 position = Vector2(64.5, -168.5)
 shape = SubResource("RectangleShape2D_tnd1r")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1836020559]
+
+[node name="Bussola" type="Control" parent="HUD" unique_id=735659080]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 256.0
+offset_bottom = 280.0
+mouse_filter = 2
+script = ExtResource("hud_bussola")
+
+[node name="Destino" type="OptionButton" parent="HUD/Bussola" unique_id=2045232705]
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 32.0
+
+[node name="Indicacao" type="Label" parent="HUD/Bussola" unique_id=501033459]
+layout_mode = 0
+offset_top = 210.0
+offset_right = 240.0
+offset_bottom = 238.0
+horizontal_alignment = 1
+
+[node name="Coordenadas" type="Label" parent="HUD/Bussola" unique_id=1054709720]
+layout_mode = 0
+offset_top = 235.0
+offset_right = 240.0
+offset_bottom = 260.0
+theme_override_colors/font_shadow_color = Color(0.03, 0.07, 0.11, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 14
+horizontal_alignment = 1
 
 [connection signal="body_entered" from="Sprite2D/Area2D" to="Sprite2D/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="ilha_inicial/ilha_inicial" to="ilha_inicial/ilha_inicial" method="_on_body_entered"]

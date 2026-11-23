@@ -1,0 +1,122 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://menu_pausa.gd" id="1_pausa"]
+
+[sub_resource type="StyleBoxFlat" id="Painel"]
+bg_color = Color(0.914, 0.784, 0.569, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.51, 0.352, 0.212, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0.063, 0.047, 0.043, 0.9)
+shadow_size = 7
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="Botao"]
+bg_color = Color(0.318, 0.216, 0.125, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.659, 0.459, 0.263, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="BotaoHover"]
+bg_color = Color(0.412, 0.282, 0.176, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.62, 0.37, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="BotaoFoco"]
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.941, 0.733, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="Theme" id="TemaPausa"]
+Button/colors/font_color = Color(1, 0.941, 0.733, 1)
+Button/colors/font_focus_color = Color(1, 0.941, 0.733, 1)
+Button/colors/font_hover_color = Color(1, 0.98, 0.878, 1)
+Button/font_sizes/font_size = 24
+Button/styles/normal = SubResource("Botao")
+Button/styles/hover = SubResource("BotaoHover")
+Button/styles/pressed = SubResource("Botao")
+Button/styles/focus = SubResource("BotaoFoco")
+
+[node name="MenuPausa" type="CanvasLayer"]
+process_mode = 3
+layer = 10
+script = ExtResource("1_pausa")
+
+[node name="Fundo" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.035, 0.051, 0.078, 0.714)
+
+[node name="Painel" type="Panel" parent="Fundo"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -146.0
+offset_top = -91.0
+offset_right = 146.0
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("TemaPausa")
+theme_override_styles/panel = SubResource("Painel")
+
+[node name="Botoes" type="VBoxContainer" parent="Fundo/Painel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -118.0
+offset_top = -68.0
+offset_right = 118.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 11
+
+[node name="Continuar" type="Button" parent="Fundo/Painel/Botoes"]
+custom_minimum_size = Vector2(0, 62)
+layout_mode = 2
+text = "Continuar"
+
+[node name="Sair" type="Button" parent="Fundo/Painel/Botoes"]
+custom_minimum_size = Vector2(0, 62)
+layout_mode = 2
+text = "Sair"
+
+[connection signal="pressed" from="Fundo/Painel/Botoes/Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="Fundo/Painel/Botoes/Sair" to="." method="_on_sair_pressed"]

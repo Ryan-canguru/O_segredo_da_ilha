@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+MenuPausa="*res://menu_pausa.tscn"
 EstadoViagem="*uid://eopp63mv7ax8"
 
 [display]
