@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://yj60hbpv3so7" path="res://menu/Fundo_do_menu.png" id="1_mae5d"]
 [ext_resource type="Shader" uid="uid://b01hc05lrnapw" path="res://menu.gdshader" id="2_mae5d"]
 [ext_resource type="Texture2D" uid="uid://72smroeoogtw" path="res://menu/logo.png" id="2_ouk20"]
-[ext_resource type="PackedScene" uid="uid://denh3tlkj8tic" path="res://fase_1.tscn" id="2_ytr4m"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4hy44"]
 shader = ExtResource("2_mae5d")
@@ -25,29 +24,29 @@ offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4hy44")
-cena_do_jogo = ExtResource("2_ytr4m")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=729723885]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -3.0
-offset_top = 5.0
-offset_right = -3.0
-offset_bottom = 5.0
+offset_left = -1.0
+offset_top = -5.0
+offset_right = 1.0
+offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_mae5d")
+expand_mode = 1
 
 [node name="logo" type="TextureRect" parent="." unique_id=390271196]
 material = SubResource("ShaderMaterial_4hy44")
 custom_minimum_size = Vector2(700, 200)
 layout_mode = 0
-offset_left = -153.0
-offset_top = 174.0
-offset_right = 2131.0
-offset_bottom = 639.0
+offset_left = -20.0
+offset_top = 48.0
+offset_right = 1167.0
+offset_bottom = 391.0
 mouse_filter = 2
 texture = ExtResource("2_ouk20")
 expand_mode = 1
@@ -55,10 +54,10 @@ stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1069978079]
 layout_mode = 1
-offset_left = 737.0
-offset_top = 639.0
-offset_right = 1232.0
-offset_bottom = 745.0
+offset_left = 325.0
+offset_top = 368.0
+offset_right = 820.0
+offset_bottom = 474.0
 
 [node name="iniciar" type="Button" parent="VBoxContainer" unique_id=814459584]
 custom_minimum_size = Vector2(250, 70)
@@ -74,10 +73,10 @@ flat = true
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1905214588]
 layout_mode = 0
-offset_left = 851.0
-offset_top = 743.0
-offset_right = 1101.0
-offset_bottom = 847.0
+offset_left = 446.0
+offset_top = 458.0
+offset_right = 696.0
+offset_bottom = 562.0
 
 [node name="sair" type="Button" parent="VBoxContainer2" unique_id=1776014246]
 custom_minimum_size = Vector2(250, 70)

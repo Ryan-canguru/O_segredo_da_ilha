@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dpqfijnldhuux"]
+
+[ext_resource type="PackedScene" uid="uid://bcoa6jv7ol2yr" path="res://anne.tscn" id="1_6dsjy"]
+[ext_resource type="Texture2D" uid="uid://pgg5slpa8nq0" path="res://barco_pirata.png" id="2_1lkm3"]
+[ext_resource type="Script" uid="uid://bvkv7g0l64q3g" path="res://volta_fase1.gd" id="3_5io7x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urf38"]
+atlas = ExtResource("2_1lkm3")
+region = Rect2(334, 0, 167, 186)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jbymy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urf38")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gefyy"]
+radius = 71.30919
+
+[node name="fase_4" type="Node2D" unique_id=1640714812]
+
+[node name="anne" parent="." unique_id=558471284 instance=ExtResource("1_6dsjy")]
+position = Vector2(354, 133)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=802233553]
+position = Vector2(247, 28)
+sprite_frames = SubResource("SpriteFrames_jbymy")
+
+[node name="Area2D" type="Area2D" parent="AnimatedSprite2D" unique_id=859448441]
+script = ExtResource("3_5io7x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D" unique_id=790974482]
+position = Vector2(1, 11)
+shape = SubResource("CircleShape2D_gefyy")
+
+[connection signal="body_entered" from="AnimatedSprite2D/Area2D" to="AnimatedSprite2D/Area2D" method="_on_body_entered"]

@@ -1,25 +1,17 @@
-extends Control
 
-@export var cena_do_jogo: PackedScene
+extends Control
 
 @onready var iniciar: Button = $VBoxContainer/iniciar
 @onready var sair: Button = $VBoxContainer2/sair
 
 
 func _ready() -> void:
-	if not iniciar.pressed.is_connected(_on_iniciar_pressed):
-		iniciar.pressed.connect(_on_iniciar_pressed)
-
-	if not sair.pressed.is_connected(_on_sair_pressed):
-		sair.pressed.connect(_on_sair_pressed)
+	iniciar.pressed.connect(_on_iniciar_pressed)
+	sair.pressed.connect(_on_sair_pressed)
 
 
 func _on_iniciar_pressed() -> void:
-	if cena_do_jogo == null:
-		push_warning("Falta escolher a Cena do Jogo no Inspector.")
-		return
-
-	get_tree().change_scene_to_packed(cena_do_jogo)
+	get_tree().change_scene_to_file("res://fase_2.tscn")
 
 
 func _on_sair_pressed() -> void:

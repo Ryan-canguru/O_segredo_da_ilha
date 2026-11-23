@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://bfx2qn6je4ym7"]
+
+[ext_resource type="Script" uid="uid://q7qrh8ticpe7" path="res://barco_pirata.gd" id="1_5gbhs"]
+[ext_resource type="Texture2D" uid="uid://pgg5slpa8nq0" path="res://barco_pirata.png" id="2_u83ga"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nv37m"]
+atlas = ExtResource("2_u83ga")
+region = Rect2(334, 0, 167, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0oon5"]
+atlas = ExtResource("2_u83ga")
+region = Rect2(0, 0, 167, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3p47"]
+atlas = ExtResource("2_u83ga")
+region = Rect2(167, 0, 167, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gpf0"]
+atlas = ExtResource("2_u83ga")
+region = Rect2(501, 186, 167, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k61me"]
+atlas = ExtResource("2_u83ga")
+region = Rect2(0, 186, 167, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkfi2"]
+atlas = ExtResource("2_u83ga")
+region = Rect2(501, 0, 167, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilym3"]
+atlas = ExtResource("2_u83ga")
+region = Rect2(167, 186, 167, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fy2t"]
+atlas = ExtResource("2_u83ga")
+region = Rect2(334, 186, 167, 186)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2r02c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nv37m")
+}],
+"loop": 1,
+"name": &"e",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0oon5")
+}],
+"loop": 1,
+"name": &"n",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3p47")
+}],
+"loop": 1,
+"name": &"ne",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gpf0")
+}],
+"loop": 1,
+"name": &"nw",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k61me")
+}],
+"loop": 1,
+"name": &"s",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkfi2")
+}],
+"loop": 1,
+"name": &"se",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilym3")
+}],
+"loop": 1,
+"name": &"sw",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fy2t")
+}],
+"loop": 1,
+"name": &"w",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5gbhs"]
+radius = 35.0
+height = 132.0
+
+[node name="barco_pirata" type="CharacterBody2D" unique_id=1091357476]
+script = ExtResource("1_5gbhs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=68461542]
+sprite_frames = SubResource("SpriteFrames_2r02c")
+animation = &"s"
+autoplay = "s"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565949417]
+position = Vector2(3, 10)
+shape = SubResource("CapsuleShape2D_5gbhs")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=790098688]
